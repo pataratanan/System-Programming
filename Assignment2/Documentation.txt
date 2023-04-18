@@ -1,0 +1,39 @@
+(a) your name and student ID
+- Pataratanan Visitserngtrakul 20310367
+
+
+
+------------------------------------------------------------------------
+
+
+
+(b) How to compile and run your code
+- type cc assignment2.c and then when you want to execute you have to type ./a.out afile.txt afile.txt
+
+
+
+------------------------------------------------------------------------
+
+
+(c) A simple description of your solution logic or pseudo code (no more than a page)
+
+- child1 is the normal to find the average number and highest number from the user input of 8 elements
+
+
+- child2 is word count a text file similar to wc -c textfilename when you run this command on the terminal. Child 2 simulate that command by using exec() family. The exec() family of system calls allow us to load a new executable. I'm passing parameters child2 as const char *file to call it in argument of execlp() for user option to specify the filenames and the program is searched in directories that are listed the current PATH environment variable.
+
+
+-child3 is to updated the afile-21.txt any word occurrence "execute" it's going to change into "run" by using sed library to find and replace text. The snpriftf() function redirects the output of the standard printf() function to a buffer the function returns an integer, which is the number of characters that would have been written if the buffer_size argument had been large enough. Therefore, the buffer is only considered to be completely written if the returned value is non-negative and less than buff_size. Al Sed stands for stream editor. It reads the  given file, modifying the input as specified by a list of sed commands. Second sed is to put the word "This is the updated version" on the first(1s) sentence of text file and then execlp("bash") calls the program as interpreter and the -c to execute the following command as interpreted
+
+-parent_code is to showing the exit of status of every child when it ends. It shows child ID and exits status
+
+-main is create 3 child and loop for using parent_code functions
+
+
+------------------------------------------------------------------------
+
+
+(d) your test plan, test run and output.
+
+- user have to provide the name of text file to start the program. If user only run without name of text file program still running but it is not correct. As same as when user provide number instead of text file name program still running as well.
+
