@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/pataratanan/Documents/SP1/Assignment1/20310367/main.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+sortList.c
+/Users/pataratanan/Documents/SP1/Assignment1/20310367/sortList.c
+
+/Users/pataratanan/Documents/SP1/Assignment1/20310367/sortList.c
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+
